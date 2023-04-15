@@ -1,0 +1,57 @@
+import React from 'react';
+import { RiCheckboxBlankCircleFill } from 'react-icons/ri';
+
+const Hero = () => {
+    return (
+        <section className="h-[80vh] grid grid-cols-1 md:grid-cols-8">
+            <div className='md:col-span-5 flex items-center justify-center p-8'> {/*Información CTA*/}
+                <div>
+                    <h1 className='text-4xl font-bold  text-primarytext'>
+                        <span className='text-primary'>ChatBot </span>psicológico,<br/> apoyo<span className='text-primary'> emocional 
+                        </span> 24/7 
+                    </h1>
+                    <br/>
+                    <div className='text-secondarytext text-base leading-[1.5rem] xl:max-w-lg'>
+                        <p>Dani es un <a href='https://arxiv.org/abs/2304.03442' 
+                                        target="_blank" 
+                                        className='italic font-semibold'>agente generativo</a> basado en inteligencia artificial de última generación, derivado de GPT-4 y otros modelos. Re-entrenado y mejorado, para ayudar a personas con depresión y ansiedad.</p>
+                    </div>
+                    <br/>
+                    
+                    <div className='xl:flex items-center gap-4 py-2'>
+
+
+                    <a href='#acceso'><button className="bg-primary hover:bg-cta text-white 
+                        py-2 px-6 rounded-xl text-xl">Quiero acceder</button></a>
+                    
+                        <p className='italic text-base text-secondarytext py-2'>27 personas delante de ti en lista de espera</p>
+ 
+                        
+                    </div>
+                </div>
+            
+            </div>    
+
+           <div className='sm:hidden md:col-span-3 flex items-center py-40 justify-center relative'> {/*Imagen lateral CTA*/}
+                <div>
+                    <img 
+                        src="123132asdava.png" 
+                        
+                    />
+                    <div className='flex justify-center'>
+                    <div className="absolute  w-[350px] h-[90px] bg-white ">
+                </div>
+                    </div>
+                </div>
+                
+                <div className="absolute top-1/2 -translate-y-1/2 left-1/2
+                 -translate-x-1/2 w-[350px] h-[350px] text-ctaBtn bg-primary border-[10px] border-primary rounded-full -z-10">
+                </div>
+            </div>    
+        
+        </section>
+    )
+
+}
+
+export default Hero
