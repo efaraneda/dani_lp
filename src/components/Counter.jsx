@@ -33,7 +33,7 @@ const Mid = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
       // Implementar la validación de correo electrónico y número de teléfono aquí
-      console.log('Formulario enviado');
+
     };
   
     return (

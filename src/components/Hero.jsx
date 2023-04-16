@@ -18,11 +18,8 @@ const Hero = () => {
         .catch(error => console.error(`Error fetching CSV file: ${error}`));
     };
   
-    fetchData(); // fetch data initially
-  
-    const intervalId = setInterval(fetchData, 60000); // fetch data every 60 seconds
-  
-    return () => clearInterval(intervalId); // cleanup function to clear interval when component unmounts
+    
+    return () => fetchData(); // cleanup function to clear interval when component unmounts
   }, []);
 
   return (

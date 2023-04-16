@@ -19,7 +19,7 @@ const Somos = () => {
           ¿Quienes somos?
         </h3>
         <div className=' text-center text-base l
-                        eading-[1.5rem] xl:max-w-lg mb-20'>
+                        eading-[1.5rem] max-w-[70%] mb-20'>
                             Somos un equipo de ingenieros chilenos, 
                             buscando ayudar a personas, a través de los avances más recientes
                              en el campo de la Inteligencia Artificial y <a href='https://arxiv.org/abs/2304.03442' 

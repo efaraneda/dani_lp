@@ -6,14 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "serve": "npm run build && vite preview"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "add": "^2.0.6",
     "aws-sdk": "^2.1359.0",
+    "global": "^4.4.0",
+    "live-server": "^1.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "surge": "^0.23.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
