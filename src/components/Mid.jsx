@@ -79,7 +79,7 @@ const Mid = () => {
       'Content-Type': 'application/json'
     }
   });
-
+  handleResetForm()
             } catch (error) {
               console.error(error);
             }
