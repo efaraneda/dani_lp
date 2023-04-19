@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Mid from "./components/Mid";
 import Somos from "./components/Somos";
 import Counter from "./components/Counter";
+import Links from "./components/Links";
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
       <Counter />
       <Mid />
       <Somos />
+      <Links />
       <Footer />
     </div>
     

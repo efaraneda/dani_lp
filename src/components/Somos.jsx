@@ -15,17 +15,17 @@ const Somos = () => {
   
     return (
       <div id="Somos" className="bg-gray-200 flex flex-col items-center py-20">
-        <h3 className="flex flex-col items-center justify-center sm:text-center text-3xl font-bold text-primarytext mb-20 sm:max-w-xs h-16 ">
+        <h3 className="flex flex-col items-center justify-center text-3xl font-bold text-primarytext mb-20 sm:max-w-xs h-16 ">
           ¿Quienes somos?
         </h3>
-        <div className=' text-center text-base l
+        <div className='sm:justify-center text-center text-base l
                         eading-[1.5rem] max-w-[70%] mb-20'>
                             Somos un equipo de ingenieros chilenos, 
                             buscando ayudar a personas, a través de los avances más recientes
                              en el campo de la Inteligencia Artificial y <a href='https://arxiv.org/abs/2304.03442' 
                                         target="_blank" 
                                         className='italic font-semibold'>agentes generativos</a>.</div>
-        <div className=' text-center text-base leading-[1.5rem]'>
+        <div className='sm:w-[70%] sm:justify-center text-center leading-[1.5rem]'>
             ¿Quieres colaborar?<br/>
          ¡Deja tus datos en el formulario!</div>
       </div>

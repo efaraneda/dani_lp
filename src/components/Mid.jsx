@@ -27,7 +27,7 @@ const Mid = () => {
         const city = locationData.city;
         
         setFormState({ ...formState, country, city });
-        
+
       } catch (error) {
         console.error(error);
       }
@@ -75,31 +75,35 @@ const Mid = () => {
                 'Fuente': fuente,
                 'Medio': medio
               }, {
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-  handleResetForm()
+                headers: {
+                  'Content-Type': 'application/json'
+                }
+              }).then(data => {
+                dataLayer.push({
+                  'event': 'registro',
+                  'Nombre': nombre,
+                  'Email': email,
+                  'Pais': pais,
+                  'Ciudad': ciudad,
+                  'Fuente': fuente,
+                  'Medio': medio
+                });
+                setFormState(initialState);
+              }).then(data => {setFormState({ ...formState, submitted: true })})
+      
             } catch (error) {
               console.error(error);
             }
           }
-          setFormState({ ...formState, submitted: true });
+      
           enviarMensaje(formState.name, 
                         formState.email, 
                         formState.phone, 
                         formState.message,
                         formState.country,
-                        formState.city)
-                        
-          
+                        formState.city);
+
         }
-
-
-
-  const handleResetForm = () => {
-    setFormState(initialState);
-  };
   
 
   return (
@@ -110,7 +114,7 @@ const Mid = () => {
         Estás a un paso de acceder
       </h2>
       
-      <form onSubmit={handleSubmit} onReset={handleResetForm} className="md:w-2/4 lg:w-1/2 bg-white p-10 rounded-lg shadow-lg ">
+      <form onSubmit={handleSubmit}  className="md:w-2/4 lg:w-1/2 bg-white p-10 rounded-lg shadow-lg ">
         <br />
         <div className="mb-6">
           <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
@@ -179,8 +183,9 @@ const Mid = () => {
           </button>
         </form>
         {formState.submitted ? (
-  <h3 className="flex flex-col items-center justify-center sm:text-center text-2xl font-bold text-primary-text mb-20 sm:max-w-xs h-20">
-    ¡Tus datos fueron enviados! <img
+  <h3 className="flex flex-col items-center justify-center 
+  sm:text-center text-2xl font-bold text-primary-text mb-20 sm:max-w-xs h-20">
+    ¡Tu mensaje fue enviado! <img
             src="mario_wave.gif"
             className='h-[30px] '
           />

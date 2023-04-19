@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { RiCheckboxBlankCircleFill } from 'react-icons/ri';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 const Hero = () => {
@@ -38,9 +40,15 @@ const Hero = () => {
           </h2>
           <br/>
           <div className='xl:flex items-center gap-4 py-2'>
-            <a href='#acceso'>
+          <Link
+              to="acceso"
+              smooth={true}
+              duration={1050}
+              className="hover:text-gray-400 cursor-pointer"
+            >
               <button className="bg-primary hover:bg-cta text-white py-2 px-6 rounded-xl text-xl">Acceder</button>
-            </a>
+              </Link>
+
             {WLpersonas !== null &&
               <p className='italic text-base text-secondarytext py-2'>{WLpersonas} personas delante de ti en lista de espera</p>
             }
