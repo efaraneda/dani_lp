@@ -18,33 +18,49 @@ const Links = () => {
         <div className="flex items-center">
 
             <div>
-               <h4 className="py-4 font-bold mb-2">Chile</h4>
-                <a href="https://psicologogratis.cl" className="py-4 hover:text-primary">
-                Visítanos
+               <h4 className="py-4 sm:py-6 mb-2 sm:mb-0 text-primary sm:font-bold">Navega</h4>
+               <div className="flex flex-col">
+
+
+                <a href="https://dani.chat" className="py-2 sm:py-1 hover:text-primary">
+                Home
                 </a>
+                <a href="https://psicologogratis.ar" className="py-2 hover:text-blue-300">
+                Argentina
+                </a>
+                <a href="https://psicologogratis.cl" className="py-2 hover:text-red-400">
+                Chile
+                </a>
+                </div>
+                
+
             </div>
         </div>
     </div>
 
-
     <div className="sm:px-14 flex sm:flex-row flex-col items-center justify-left">
         <div className="flex items-center">
-            <div>
-            <h4 className="py-4 font-bold mb-2">Argentina</h4>
-        
-        <a href="https://psicologogratis.ar" className="py-4 hover:text-primary">
-        Visítanos
+            <div >
+            <h4 className="py-4 sm:py-1 mb-2 text-primary sm:font-bold">Comparte</h4>
+
+              <div className="flex flex-col">
+              <a href="https://wa.me/?text=Mira, Esto está bacán!! https://dani.chat" target="_blank" data-action="share/whatsapp/share" className="py-2 hover:text-green-400">
+                Compartir por WhatsApp 
                 </a>
+                <a href="https://t.me/share/url?url=https://dani.chat&text=Mira, Esto está bacán!!" 
+                    target="_blank" 
+                    className="py-2 hover:text-blue-500">
+                Compartir en Telegram</a>
+                
+
+              </div>
             </div>
         </div>
     </div>
     <div className="sm:px-14 flex sm:flex-row flex-col items-center justify-left">
         <div className="flex items-center">
         <div>
-            <h4 className="py-4 font-bold mb-2">Home</h4>
-        <a href="https://dani.chat" className="py-4 hover:text-primary">
-          Visítanos
-          </a>
+        
             </div>
         </div>
     </div>
@@ -53,3 +69,4 @@ const Links = () => {
 };
 
 export default Links;
+
