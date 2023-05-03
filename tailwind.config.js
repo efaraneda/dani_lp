@@ -19,7 +19,9 @@ export default {
         primarytext:"#05050A",
         cta:"#4D4C9C",
         ctaBtn:"#FFFFFF",
-        secondarytext:"#85848e"
+        secondarytext:"#85848e",
+        lavanda:"#dadaf8",
+        indigo:"#7d7ce7"
       }
     
     }

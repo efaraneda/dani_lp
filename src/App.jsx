@@ -1,23 +1,25 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
-import Mid from "./components/Mid";
-import Somos from "./components/Somos";
-import Counter from "./components/Counter";
-import Links from "./components/Links";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
-  
+//Pages
+import Home from "./pages/Home";
+import Error404 from "./pages/Error404";
+import Roadmap from "./pages/Roadmap";
+import Research from "./pages/Research";
+import Privacidad from "./pages/Privacidad";
+
+function App() { 
   return (
-    <div>
-      <Header />
-      <Hero />
-      <Counter />
-      <Mid />
-      <Somos />
-      <Links />
-      <Footer />
-    </div>
+   <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/roadmap" element={<Roadmap/>} /> 
+      <Route path="/privacidad" element={<Privacidad/>} /> 
+      <Route path="/research" element={<Research/>} /> 
+      <Route index element={<Home/>} />      
+      <Route path="*" element={<Error404/>} />
+    </Routes>
+   
+   </BrowserRouter>
     
   )
 }

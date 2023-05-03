@@ -1,8 +1,9 @@
 import { RiCheckboxBlankCircleFill } from "react-icons/ri";
+//import {Link} from "react-router-dom";
 
 const Links = () => {
   return (
-    <div className="text-secondarytext h-[50vh] sm:h-[82vh] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-4 w-full py-14">
+    <div className="text-secondarytext h-[50vh] sm:h-[120vh] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-4 w-full py-14">
       <div className="flex flex-col items-center justify-left">
         <div className="sm:w-[60%] text-4xl text-primarytext font-bold relative bg-white px-1.5">
           dani<t className="text-primary text-4xl font-bold -py-1">Chat</t>
@@ -20,59 +21,62 @@ const Links = () => {
             <div>
                <h4 className="py-4 sm:py-6 mb-2 sm:mb-0 text-primary sm:font-bold">Navega</h4>
                <div className="flex flex-col">
+                
+                
+              {/* This is a single-line comment  <Link to='/' className="items-center md:h-10 md:w-20
+                 text-center hover:text-primary hover:font-bold flex items-center">Inicio</Link>
 
+                <Link to='/roadmap' className="items-center md:h-10 md:w-20
+                  hover:text-primary hover:font-bold flex items-center">Roadmap</Link> 
+                
+                <Link to='/privacidad' className="items-center md:h-10 md:w-20
+                 hover:text-primary hover:font-bold flex items-center">Privacidad</Link>
 
-                <a href="https://dani.chat" className="py-2 sm:py-1 hover:text-primary">
-                Home
-                </a>
-                <a href="https://psicologogratis.ar" className="py-2 hover:text-blue-300">
-                Argentina
-                </a>
-                <a href="https://psicologogratis.cl" className="py-2 hover:text-red-400">
-                Chile
-                </a>
-                </div>
+                <Link to='/research' className="items-center md:h-10 md:w-20
+                 text-center hover:text-primary hover:font-bold flex items-center">Research</Link>
+                 */}
+                 </div>
                 
 
             </div>
         </div>
-    </div>
+      </div>
 
-    <div className="sm:px-14 flex sm:flex-row flex-col items-center justify-left">
-        <div className="flex items-center">
-            <div >
-            <h4 className="py-4 sm:py-1 mb-2 text-primary sm:font-bold">Comparte</h4>
+      <div className="sm:px-14 flex sm:flex-row flex-col items-center justify-left">
+          <div className="flex items-center">
+              <div >
+              <h4 className="py-4 sm:py-1 mb-2 text-primary sm:font-bold">Comparte</h4>
 
-              <div className="flex flex-col">
-              <a href="https://wa.me/?text=Mira, Esto está bacán!! https://dani.chat" target="_blank" data-action="share/whatsapp/share" className="py-2 hover:text-green-400">
-                Compartir en WhatsApp 
-                </a>
-                <a href="https://t.me/share/url?url=https://dani.chat&text=Mira, Esto está bacán!!" 
-                    target="_blank" 
-                    className="py-2 hover:text-blue-500">
-                Compartir en Telegram</a>
-                
+                <div className="flex flex-col ">
+                <a href="https://wa.me/?text=Mira, Esto está bacán!! https://dani.chat" target="_blank" data-action="share/whatsapp/share" className="py-2 hover:text-green-400 hover:font-bold">
+                  Compartir en WhatsApp 
+                  </a>
+                  <a href="https://t.me/share/url?url=https://dani.chat&text=Mira, Esto está bacán!!" 
+                      target="_blank" 
+                      className="py-2 hover:text-blue-500 hover:font-bold">
+                  Compartir en Telegram</a>
+                  
+
+                </div>
+              </div>
+          </div>
+      </div>
+      <div className="sm:px-14 sm:py-10 flex sm:flex-row flex-col items-center justify-left">
+          <div className="flex items-center">
+          <div>
 
               </div>
-            </div>
-        </div>
-    </div>
-    <div className="sm:px-14 sm:py-10 flex sm:flex-row flex-col items-center justify-left">
-        <div className="flex items-center">
-        <div>
-
-            </div>
-        </div>
-        <div className="absolute sm:flex sm:flex-row py-10 sm:py-1 mb-10 text-primary sm:font-bold">
-        <div className="py-6">  
-          <a href="https://psicologogratis.ar/"><img src="arg-flag.webp" alt="Bandera de Argentina" className="w-[40px] h-[26px] rounded opacity-70 hover:opacity-100"></img></a>
           </div>
-            <div className="-py-4 sm:py-6 sm:px-2">
-              <a href="https://psicologogratis.cl/"><img src="cl-flag.svg" alt="Bandera de Chile" className="w-[40px] h-[26px] rounded opacity-70 hover:opacity-100"></img></a>
+          <div className="absolute sm:flex sm:flex-row py-10 sm:py-1 mb-10 text-primary sm:font-bold">
+          <div className="py-6">  
+            <a href="https://psicologogratis.ar/"><img src="arg-flag.webp" alt="Bandera de Argentina" className="w-[40px] h-[26px] rounded opacity-70 hover:opacity-100"></img></a>
             </div>
-        </div>
-    </div>
-    </div>
+              <div className="-py-4 sm:py-6 sm:px-2">
+                <a href="https://psicologogratis.cl/"><img src="cl-flag.svg" alt="Bandera de Chile" className="w-[40px] h-[26px] rounded opacity-70 hover:opacity-100"></img></a>
+              </div>
+          </div>
+      </div>
+   </div>
   );
 };
 

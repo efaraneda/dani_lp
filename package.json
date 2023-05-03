@@ -9,14 +9,21 @@
     "serve": "npm run build && vite preview"
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^1.10.2",
+    "@amplitude/marketing-analytics-browser": "^0.7.2",
     "@tailwindcss/typography": "^0.5.9",
     "add": "^2.0.6",
+    "axios": "^1.3.6",
+    "classnames": "^2.3.2",
     "global": "^4.4.0",
     "live-server": "^1.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
-    "react-scroll": "^1.8.9"
+    "react-player": "^2.12.0",
+    "react-router-dom": "^6.11.0",
+    "react-scroll": "^1.8.9",
+    "tailwind-styled-components": "^2.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
