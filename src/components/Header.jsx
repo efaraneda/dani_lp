@@ -25,26 +25,30 @@ const Header = () => {
                     </a></Link>
 
             </div>
-            <div className="hidden">
+            <div className="">
             <nav
                 className={`fixed bg-white w-[80%] md:w-[40%] xl:w-full h-full ${
                             showMenu ? "left-0" : "-left-full"} 
                             top-0 xl:static flex-1 flex flex-col xl:flex-row 
                             items-center justify-center gap-10 
-                            transition-all duration-500 z-50`}>
+                            transition-all duration-500 z-50 md:mx-60`}>
 
-
+                
                 <Link to='/' className="items-center md:h-10 md:w-20
                  text-center hover:text-primary hover:font-bold flex items-center justify-center">Inicio</Link>        
-
-                <Link to='/roadmap' className="items-center md:h-10 md:w-20
-                 text-center hover:text-primary hover:font-bold flex items-center justify-center">Roadmap</Link> 
                 
                 <Link to='/privacidad' className="items-center md:h-10 md:w-20
                  text-center hover:text-primary hover:font-bold flex items-center justify-center">Privacidad</Link>
 
+                {/*
+                <Link to='/roadmap' className="items-center md:h-10 md:w-20
+                 text-center hover:text-primary hover:font-bold flex items-center justify-center">Roadmap</Link> 
+                
+                
+
                 <Link to='/research' className="items-center md:h-10 md:w-20
                  text-center hover:text-primary hover:font-bold flex items-center justify-center">Research</Link>
+                */}
             </nav>
             
             <button

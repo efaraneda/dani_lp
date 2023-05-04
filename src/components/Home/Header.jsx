@@ -33,7 +33,7 @@ const Header = () => {
                             transition-all duration-500 z-50`}>
             
 
-                
+                {/*
                 <Link to='/roadmap' className="items-center md:h-10 md:w-20
                  text-center hover:text-primary hover:font-bold flex items-center justify-center">Roadmap</Link> 
                 
@@ -42,7 +42,7 @@ const Header = () => {
 
                 <Link to='/research' className="items-center md:h-10 md:w-20
                  text-center hover:text-primary hover:font-bold flex items-center justify-center">Research</Link>
-           
+                */}
             </nav>
             
             <button

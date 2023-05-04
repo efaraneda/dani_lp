@@ -19,16 +19,16 @@ const VideoWidget = () => {
   };
 
   return (
-    <div className="sm:hidden fixed z-50 bottom-0 right-0 mb-4 mr-4 ">
+    <div className="hidden fixed z-50 bottom-0 right-0 mb-4 mr-4 ">
       {oculto ? null : (
         <>
           {isFullScreen ? (
-            <div className=" w-320 h-320 bg-white rounded-full flex items-center justify-center shadow-md overflow-hidden cursor-pointer">
+            <div className="mb-10 rounded-lg w-400 h-320 bg-white flex items-center justify-center shadow-md overflow-hidden cursor-pointer">
               <video
                 src={video}
                 autoPlay
                 controls
-                className="sm:py-0 sm:mb-0 sm:w-[200px] sm:h-[200px] w-[350px] h-[350px] object-cover"
+                className=" sm:w-[200px] sm:h-[200px] w-[400px] h-[300px] object-cover"
               />
               <button
                 onClick={handleFullScreenClose}

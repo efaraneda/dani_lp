@@ -7,7 +7,6 @@ import Ideal from "../components/Home/Ideal";
 import Links from "../components/Home/Links";
 import HablarConDaniEs from "../components/Home/HablarConDaniEs";
 import WhatsappMessages from "../components/Home/WhatsApp";
-import VideoWidget from "../components/Home/Video";
 
 
 
@@ -18,7 +17,6 @@ function Home() {
       <Header />
       <Hero />
       <Ideal />
-      <VideoWidget />
       <WhatsappMessages />
       <HablarConDaniEs />
       <Mid />

@@ -20,8 +20,8 @@ const Error404 = () => {
                     <Link
                         to="/"
                         className=" transition-colors"
-                        ><button className="bg-primary text-white bg-cta 
-                        py-2 px-6 rounded-xl text-xl">Volver</button>
+                        ><button className="bg-primary text-black 
+                        py-2 px-6 rounded-xl text-xl bg-white hover:bg-lavanda hover:text-black">Volver</button>
                     </Link>
 
                 </div>

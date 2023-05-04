@@ -43,7 +43,7 @@ fetchData();
             <h2>
               <div className='text-secondarytext text-base leading-[1.5rem] xl:max-w-lg'>
                 <div>
-                 Dani es un <a href='https://arxiv.org/abs/2304.03442' target="_blank" className='font-semibold'>Agente Generativo
+                 Dani es un <a href='https://arxiv.org/abs/2304.03442' target="_blank" className='font-semibold' rel='nofollow'>Agente Generativo
                   </a>, basado en ChatGPT. Entrenado para ayudar a personas con depresión y ansiedad, a 
                   través del método de<a className='font-semibold'> Terapia Cognitivo Conductual</a>
   
@@ -77,6 +77,7 @@ fetchData();
           <img
             src="ret.png"
             className='object-cover -mt-22 h-[300px] -mx-11'
+            alt="psicólogo gratis"
           />
           <div className="relative  p-4 flex flex-col justify-center gap-2 max-h-[70px] max-w-[299px] mx-auto -mt-10">
             <div className="text-xl text-center font-bold tracking-[2px] text-gray-800">

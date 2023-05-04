@@ -21,12 +21,12 @@ const Links = () => {
             <div>
                <h4 className="py-4 sm:py-6 mb-2 sm:mb-0 text-primary sm:font-bold">Navega</h4>
                <div className="flex flex-col">
-                  <a href='https://dani.chat' className="items-center md:h-10 md:w-20
-                  text-center hover:text-primary hover:font-bold flex items-center">Home</a>
+                  <a href='https://dani.chat/privacidad' className="items-center md:h-10 md:w-20
+                  text-center hover:text-primary hover:font-bold flex items-center " rel='nofollow'>Privacidad</a>
                   <a href='https://psicologogratis.ar' className="items-center md:h-10 md:w-20
-                  text-center hover:text-primary hover:font-bold flex items-center">Argentina</a>
+                  text-center hover:text-primary hover:font-bold flex items-center sm:py-[14px]">Argentina</a>
                   <a href='https://psicologogratis.cl' className="items-center md:h-10 md:w-20
-                  text-center hover:text-primary hover:font-bold flex items-center">Chile</a>
+                  text-center hover:text-primary hover:font-bold flex items-center " >Chile</a>
               {/* 
                 <Link to='/roadmap' className="items-center md:h-10 md:w-20
                   hover:text-primary hover:font-bold flex items-center">Roadmap</Link> 
@@ -51,12 +51,13 @@ const Links = () => {
               <h4 className="py-4 sm:py-1 mb-2 text-primary sm:font-bold">Comparte</h4>
 
                 <div className="flex flex-col ">
-                <a href="https://wa.me/?text=Mira, Esto está bacán!! https://dani.chat" target="_blank" data-action="share/whatsapp/share" className="py-2 hover:text-green-400 ">
+                <a href="https://wa.me/?text=Mira, Esto está bacán!! https://dani.chat" target="_blank" 
+                data-action="share/whatsapp/share" className="py-2 hover:text-green-400" rel='nofollow'>
                   Compartir en WhatsApp 
                   </a>
                   <a href="https://t.me/share/url?url=https://dani.chat&text=Mira, Esto está bacán!!" 
                       target="_blank" 
-                      className="py-2 hover:text-blue-500">
+                      className="py-2 hover:text-blue-500" rel='nofollow'>
                   Compartir en Telegram</a>
                   
 
@@ -72,7 +73,7 @@ const Links = () => {
           </div>
           <div className="absolute sm:flex sm:flex-row py-10 sm:py-1 mb-10 text-primary sm:font-bold">
           <div className="py-6">  
-            <a href="https://psicologogratis.ar/"><img src="arg-flag.webp" alt="Bandera de Argentina" className="w-[40px] h-[26px] rounded opacity-70 hover:opacity-100"></img></a>
+            <a href="https://psicologogratis.ar/" ><img src="arg-flag.webp" alt="Bandera de Argentina" className="w-[40px] h-[26px] rounded opacity-70 hover:opacity-100"></img></a>
             </div>
               <div className="-py-4 sm:py-6 sm:px-2">
                 <a href="https://psicologogratis.cl/"><img src="cl-flag.svg" alt="Bandera de Chile" className="w-[40px] h-[26px] rounded opacity-70 hover:opacity-100"></img></a>
