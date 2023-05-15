@@ -67,7 +67,7 @@ const Mid = () => {
 
           async function enviarMensaje(nombre, email, telefono, mensaje,fuente,medio,pais,ciudad,id) {
             try {
-                            const respuesta = await Axios.post(url, {
+              const respuesta = await Axios.post(url, {
                 'Nombre': nombre,
                 'Email': email,
                 'Telefono': telefono,
@@ -76,21 +76,19 @@ const Mid = () => {
                 'Medio': medio,
                 'Pais': pais,
                 'Ciudad': ciudad,
-                'SitioOrigen':'dani.chat',
+                'SitioOrigen':window.location.host,
                 'UserWebId': id
               }, {
                 headers: {
                   'Content-Type': 'application/json'
                 }
-              }).then(data => {
-                
-                setFormState(initialState);
-              }).then(data => {setFormState({ ...formState, submitted: true })})
-      
+              });
+              setFormState({ ...initialState, submitted: true })
             } catch (error) {
               console.error(error);
             }
           }
+          
       
           enviarMensaje(formState.name, 
                         formState.email, 
@@ -177,6 +175,7 @@ const Mid = () => {
           <button
             type="submit"
             className="w-full bg-primary hover:bg-cta text-white py-2 px-6 rounded-xl text-xl transition duration-200"
+            disabled={formState.submitted}
           > 
             Solicitar acceso
           </button>
