@@ -41,7 +41,7 @@ const Mid = () => {
 
         const handleSubmit = async (e)  => {
           e.preventDefault();
-          const url = 'https://blnflapxae65g3dejuiy7zpymi0vmgaj.lambda-url.us-east-2.on.aws/';
+          const url = 'https://jxi7beer7ftg6nzm3lqoeennqq0qzbvb.lambda-url.us-east-2.on.aws/';
           
           var fuente = document.referrer;
           var medio = null;
